@@ -1,0 +1,50 @@
+{
+  "name": "zalcon",
+  "version": "1.0.0",
+  "description": "Zalcon — a feature-rich, modular Discord bot for invite tracking, community management, and server automation.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/bot.js",
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "imports": {
+    "#commands/*": "./src/commands/*.js",
+    "#command": "./src/structures/classes/command.js",
+    "#context": "./src/structures/classes/context.js",
+    "#config": "./src/config/config.js",
+    "#emoji": "./src/config/emoji.js",
+    "#dbManager": "./src/database/manager.js",
+    "#structures/*": "./src/structures/*.js",
+    "#database/*": "./src/database/*.js",
+    "#config/*": "./src/config/*.js",
+    "#utils": "./src/utils/index.js",
+    "#utils/integrity": "./src/utils/integrity.js",
+    "#timerUtils": "./src/utils/timerUtils.js",
+    "#giveawayUtils": "./src/utils/giveawayUtils.js",
+    "#events/*": "./src/events/*.js",
+    "#handlers/*": "./src/structures/handlers/*.js",
+    "#classes/*": "./src/structures/classes/*.js",
+    "#db/*": "./src/database/*.js",
+    "#dbRepo/*": "./src/database/repositories/*.js",
+    "#dbServices/*": "./src/database/services/*.js",
+    "#src/*": "./src/*.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "discord.js",
+    "zalcon",
+    "modular",
+    "invite-tracker",
+    "giveaway"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.25.1",
+    "fs-extra": "^11.3.3",
+    "prettier": "^3.8.1"
+  }
+}
